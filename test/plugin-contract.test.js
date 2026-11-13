@@ -43,11 +43,9 @@ test('Invalid scale and FPS fail before decoding or creating editor objects', as
     }
 });
 
-test('Original ribbon fixture is deterministic and contains a weighted animated mesh', () => {
+test('In-memory synthetic fixture contains a weighted animated mesh', () => {
     const {api} = loadPlugin();
     const generated = createExample();
-    const committed = fs.readFileSync(new URL('../examples/weighted-ribbon.glb', import.meta.url));
-    assert.deepEqual(generated, committed);
     const {json, accessor, binary} = api.decodeGLB(generated);
     assert.equal(json.nodes.length, 3); assert.equal(json.skins[0].joints.length, 2);
     const primitive = json.meshes[0].primitives[0];

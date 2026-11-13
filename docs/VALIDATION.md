@@ -39,7 +39,7 @@ GitHub Actions runs the same commands on Windows and Linux. The checks require n
 ## Manual example check
 
 1. Load the plugin in Blockbench desktop.
-2. Import `examples/weighted-ribbon.glb` at scale `16`, FPS `120`.
+2. Generate a synthetic fixture locally with `npm run example`, then import `examples/weighted-ribbon.glb` at scale `16`, FPS `120`. The file is ignored by Git and not distributed.
 3. Expect one mesh, two source joints, three native bones including the mesh node, one texture and the `Sway` clip.
 4. Play the clip and inspect blending around the middle of the ribbon.
 5. Save BBMODEL, reopen it, disable the importer and confirm the saved rig still plays.

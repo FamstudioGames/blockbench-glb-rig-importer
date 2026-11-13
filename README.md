@@ -10,6 +10,7 @@
 </p>
 
 <p align="center">
+  <a href="https://github.com/FamstudioGames/blockbench-glb-rig-importer/releases/latest"><img alt="Download v1.0.0" src="https://img.shields.io/badge/download-v1.0.0-58d6bc?style=flat-square&amp;logo=github"></a>
   <img alt="Blockbench 5.0+" src="https://img.shields.io/badge/Blockbench-5.0%2B-58d6bc?style=flat-square">
   <img alt="Desktop plugin" src="https://img.shields.io/badge/platform-desktop-8ba4ff?style=flat-square">
   <img alt="MIT license" src="https://img.shields.io/badge/license-MIT-f5b56b?style=flat-square">
@@ -17,6 +18,8 @@
 </p>
 
 <p align="center">
+  <a href="https://github.com/FamstudioGames/blockbench-glb-rig-importer/releases/latest/download/glb_rig_importer.js"><strong>Download plugin (.js)</strong></a> ·
+  <a href="https://github.com/FamstudioGames/blockbench-glb-rig-importer/releases/latest">Latest release</a> ·
   <a href="#install">Install</a> ·
   <a href="#what-makes-it-useful">Features</a> ·
   <a href="#compatibility">Compatibility</a> ·
@@ -50,16 +53,18 @@ Animations are sampled at source key times and an additional configurable grid, 
 
 Requires **Blockbench desktop 5.0 or newer** with native armature APIs. The existing character workflow was validated on **5.2.2**; other versions have not been exhaustively tested.
 
-1. Download or clone this repository and locate [`plugin/glb_rig_importer.js`](plugin/glb_rig_importer.js).
+1. **[Download `glb_rig_importer.js` from the latest release](https://github.com/FamstudioGames/blockbench-glb-rig-importer/releases/latest/download/glb_rig_importer.js).** Download the `.js` asset itself; you do not need the source-code archive.
 2. In Blockbench, open **File → Plugins**.
 3. Choose **Load Plugin from File** and select `glb_rig_importer.js`.
 4. Open **File → Import → Import GLB with Rig and Animations…**.
 
-You can also drag a `.glb` file into the editor after installing the plugin. While the repository is private, use an authenticated clone or download; an anonymous raw-file URL will not work.
+The [release page](https://github.com/FamstudioGames/blockbench-glb-rig-importer/releases/latest) also includes `LICENSE.txt` and `SHA256SUMS.txt`. The plugin's source is available in [`plugin/glb_rig_importer.js`](plugin/glb_rig_importer.js). Model files are not distributed with the plugin.
+
+You can also drag a `.glb` file into the editor after installing the plugin. While the repository is private, release downloads require a signed-in GitHub account with access. Once the repository becomes public, the same download links will be available to everyone.
 
 ## First import
 
-Try the original, MIT-licensed [`examples/weighted-ribbon.glb`](examples/weighted-ribbon.glb): a small two-joint ribbon with blended weights, an embedded texture and a `Sway` animation. Its source generator is included; no third-party character asset is required.
+Use your own self-contained, uncompressed GLB file. This repository and its releases do not include character models.
 
 1. Save any current work, then choose the GLB file.
 2. Set **Coordinate scale**. The default is `16`; GLB coordinates are multiplied by this number.
@@ -68,7 +73,7 @@ Try the original, MIT-licensed [`examples/weighted-ribbon.glb`](examples/weighte
 5. Open **Animate**, select a clip and play or edit it.
 6. Save as `.bbmodel` and reopen it to check your workflow.
 
-The example is two source units tall, so importing at scale `16` produces a ribbon about 32 Blockbench units tall. Real assets may use very different source scales.
+Real assets may use very different source scales. For developer testing, a [synthetic fixture generator](examples/README.md) can create an original ribbon locally; generated GLB files are excluded from version control.
 
 ## Compatibility
 
@@ -141,6 +146,17 @@ The distinguishing workflow here is direct GLB import into native Blockbench arm
 
 Bug reports, small reproducible files and compatibility findings are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md), the [changelog](CHANGELOG.md), and the issue templates. Only share assets you have permission to redistribute.
 
+## Support
+
+If this plugin helps your workflow, consider supporting my work through [itch.io](https://famstudiogames.itch.io/advanced-flowchart-editor-for-construct-3/donate). This is the donation page for my Flowchart Editor project; contributions support my independent tool development.
+
+## Contact
+
+- Reddit: [u/famstudios](https://www.reddit.com/user/famstudios/submitted/)
+- Telegram: [Join the channel](https://t.me/+RzFhrTe9XYAxZjhi)
+- Email: [famstudiogames@gmail.com](mailto:famstudiogames@gmail.com)
+- More tools: [FamstudioGames on itch.io](https://famstudiogames.itch.io/)
+
 ## License
 
-[MIT](LICENSE). The bundled ribbon example, generator and repository artwork are original project assets covered by the same license. Your imported models retain their own licenses.
+[MIT](LICENSE). The synthetic fixture generator and repository artwork are original project assets covered by the same license. Your imported models retain their own licenses.

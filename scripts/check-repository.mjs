@@ -14,7 +14,7 @@ function walk(directory) {
     }
 }
 walk(root);
-const required = ['README.md', 'LICENSE', 'AGENTS.md', 'llms.txt', 'plugin/glb_rig_importer.js', 'examples/weighted-ribbon.glb', 'docs/assets/hero.svg'];
+const required = ['README.md', 'LICENSE', 'AGENTS.md', 'llms.txt', 'plugin/glb_rig_importer.js', 'docs/assets/hero.svg'];
 for (const name of required) {
     if (!fs.existsSync(path.join(root, name))) throw new Error('Missing required file: ' + name);
 }

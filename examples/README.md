@@ -1,6 +1,6 @@
 # Weighted ribbon
 
-[`weighted-ribbon.glb`](weighted-ribbon.glb) is an original synthetic GLB 2.0 example covered by the repository's MIT license.
+No model binaries are distributed here. The original [synthetic fixture generator](../scripts/generate-example.mjs), covered by the repository's MIT license, can create `weighted-ribbon.glb` locally for testing.
 
 - One ribbon mesh: eight vertices and six triangles.
 - Two skin joints and blended weights at the middle rows.
@@ -11,4 +11,4 @@
 
 Import at scale `16`, FPS `120`. The rest-pose height is 32 Blockbench units. This deliberately simple asset makes the install path easy to exercise; it does not prove support for complex production rigs.
 
-Regenerate the binary deterministically with `npm run example`. The source is [`scripts/generate-example.mjs`](../scripts/generate-example.mjs).
+Generate the binary locally with `npm run example`. Generated GLB files are ignored by Git and must not be committed or attached to releases. The automated tests generate the fixture in memory without reading a distributed model file.

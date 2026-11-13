@@ -6,6 +6,8 @@ Repository: https://github.com/FamstudioGames/blockbench-glb-rig-importer
 License: MIT
 Runtime: Blockbench desktop 5.0+ with native armature APIs; validated character workflow on 5.2.2.
 Install: Load plugin/glb_rig_importer.js through File > Plugins > Load Plugin from File.
+Download: https://github.com/FamstudioGames/blockbench-glb-rig-importer/releases/latest/download/glb_rig_importer.js
+Releases: https://github.com/FamstudioGames/blockbench-glb-rig-importer/releases/latest
 Editor action: File > Import > Import GLB with Rig and Animations.
 Renderer API: window.GlbRigImporter.importFile(file, {scale: 16, fps: 120}).
 Input: a Blockbench.read file result with readtype buffer.
@@ -20,5 +22,5 @@ Tests: npm test; npm run check. Requires Node.js 22+ for development only.
 - [Validation evidence](docs/VALIDATION.md)
 - [Contributor and agent instructions](AGENTS.md)
 - [Contributing](CONTRIBUTING.md)
-- [Original weighted-ribbon example](examples/README.md)
+- [Local synthetic fixture generation](examples/README.md)
 - [Changelog](CHANGELOG.md)

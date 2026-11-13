@@ -6,3 +6,7 @@ Thumbs.db
 .env
 .env.*
 *.local
+*.glb
+*.gltf
+*.bbmodel
+*.fbx

@@ -23,9 +23,10 @@ This is a standalone Blockbench desktop plugin for importing binary glTF 2.0 wit
 - Do not change repository visibility or publish releases without an explicit maintainer instruction. A request to edit code is not a publication request.
 - Do not claim lossless conversion, universal GLB support or exclusive novelty.
 - Do not add third-party models, textures or screenshots without verified redistribution rights.
+- Do not commit GLB files or attach model binaries to releases. The maintainer's character assets must remain outside this repository. Tests must generate synthetic inputs in memory.
 
 ## Validation
 
-Use Node.js 22 or newer. Run `npm test` and `npm run check` after code changes. If the example generator changes, run `npm run example` and review the generated GLB diff. No dependency installation is needed.
+Use Node.js 22 or newer. Run `npm test` and `npm run check` after code changes. Synthetic fixtures are generated in memory by tests. `npm run example` is optional for local editor testing only; its output must remain ignored by Git. No dependency installation is needed.
 
-For import or transform changes, also test in Blockbench: import the ribbon, play `Sway`, save BBMODEL, reopen and inspect deformation and weights. Do not describe unit tests as a real editor integration test.
+For import or transform changes, also test in Blockbench with a locally generated ribbon: play `Sway`, save BBMODEL, reopen and inspect deformation and weights. Do not describe unit tests as a real editor integration test.

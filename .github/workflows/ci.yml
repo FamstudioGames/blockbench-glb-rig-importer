@@ -23,7 +23,3 @@ jobs:
           node-version: '22'
       - run: npm test
       - run: npm run check
-      - name: Verify deterministic example
-        run: |
-          npm run example
-          git diff --exit-code -- examples/weighted-ribbon.glb
