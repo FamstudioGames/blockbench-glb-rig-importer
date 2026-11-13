@@ -1,0 +1,16 @@
+name: Compatibility or feature request
+description: Suggest a supported input feature or workflow improvement.
+title: "[Feature]: "
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What workflow needs this?
+      description: Describe the source asset feature and what you want to do in Blockbench.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Suggested behavior and examples
+      description: Link a specification or share an original minimal example when possible.

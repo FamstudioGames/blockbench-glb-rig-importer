@@ -1,0 +1,22 @@
+{
+  "name": "blockbench-glb-rig-importer",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Standalone Blockbench plugin to import GLB models with native armatures, vertex weights, textures and editable skeletal animations.",
+  "type": "module",
+  "license": "MIT",
+  "author": "FamstudioGames",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FamstudioGames/blockbench-glb-rig-importer.git"
+  },
+  "homepage": "https://github.com/FamstudioGames/blockbench-glb-rig-importer#readme",
+  "bugs": { "url": "https://github.com/FamstudioGames/blockbench-glb-rig-importer/issues" },
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "test": "node --test",
+    "check": "node --check plugin/glb_rig_importer.js && node scripts/check-repository.mjs",
+    "example": "node scripts/generate-example.mjs"
+  },
+  "keywords": ["blockbench", "blockbench-plugin", "glb", "gltf", "gltf-importer", "skeletal-animation", "skinning", "armature", "vertex-weights", "animation", "ai-agents"]
+}

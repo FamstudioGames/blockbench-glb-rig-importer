@@ -1,0 +1,24 @@
+# GLB Rig Importer for Blockbench
+
+> Standalone desktop plugin that imports binary glTF 2.0 (.glb) into native Blockbench armatures, weighted meshes, embedded textures and editable skeletal animation keyframes. Save the result as a portable .bbmodel.
+
+Repository: https://github.com/FamstudioGames/blockbench-glb-rig-importer
+License: MIT
+Runtime: Blockbench desktop 5.0+ with native armature APIs; validated character workflow on 5.2.2.
+Install: Load plugin/glb_rig_importer.js through File > Plugins > Load Plugin from File.
+Editor action: File > Import > Import GLB with Rig and Animations.
+Renderer API: window.GlbRigImporter.importFile(file, {scale: 16, fps: 120}).
+Input: a Blockbench.read file result with readtype buffer.
+Output: Promise of import metadata; creates a separate Generic Model project tab.
+Limits: no text .gltf, external resources, Draco, Meshopt, morph targets, or more than four vertex influences. Source animations are resampled into linear Euler keys, not preserved losslessly. Full PBR materials are not supported.
+Tests: npm test; npm run check. Requires Node.js 22+ for development only.
+
+## Documentation
+
+- [Overview and compatibility](README.md)
+- [Renderer API and automation](docs/AUTOMATION.md)
+- [Validation evidence](docs/VALIDATION.md)
+- [Contributor and agent instructions](AGENTS.md)
+- [Contributing](CONTRIBUTING.md)
+- [Original weighted-ribbon example](examples/README.md)
+- [Changelog](CHANGELOG.md)

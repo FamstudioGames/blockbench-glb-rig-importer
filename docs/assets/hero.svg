@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="520" viewBox="0 0 1280 520" role="img" aria-labelledby="title desc">
+  <title id="title">GLB Rig Importer — bring the mesh, keep the motion</title>
+  <desc id="desc">An original schematic of a weighted ribbon, skeleton joints and an animation timeline. Direct GLB import into native Blockbench rigs.</desc>
+  <defs>
+    <linearGradient id="background" x2="1" y2="1"><stop stop-color="#101d30"/><stop offset="1" stop-color="#101522"/></linearGradient>
+    <linearGradient id="ribbon" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#58d6bc" stop-opacity=".12"/><stop offset="1" stop-color="#58d6bc" stop-opacity=".48"/></linearGradient>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse"><path d="M 36 0 L 0 0 0 36" fill="none" stroke="#31425b" stroke-width="1" opacity=".32"/></pattern>
+  </defs>
+  <rect width="1280" height="520" rx="24" fill="url(#background)"/>
+  <rect x="690" y="25" width="565" height="410" rx="18" fill="url(#grid)"/>
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <rect x="56" y="49" width="212" height="30" rx="15" fill="#58d6bc" fill-opacity=".12"/>
+    <text x="75" y="69" fill="#82ead3" font-size="12" font-weight="700" letter-spacing="1.7">BLOCKBENCH DESKTOP</text>
+    <text x="56" y="150" fill="#f5f7fb" font-size="55" font-weight="750" letter-spacing="-2">GLB Rig Importer</text>
+    <text x="58" y="207" fill="#82ead3" font-size="29" font-weight="500">Bring the mesh.</text>
+    <text x="58" y="248" fill="#f5f7fb" font-size="29" font-weight="500">Keep the motion.</text>
+    <text x="59" y="304" fill="#a4b2c9" font-size="18">Native bones. Blended weights.</text>
+    <text x="59" y="334" fill="#a4b2c9" font-size="18">Animations you can keep editing.</text>
+    <g transform="translate(58 382)" font-size="13" font-weight="600">
+      <rect width="83" height="34" rx="8" fill="#22314a"/><text x="22" y="22" fill="#d6e1f4">.GLB</text>
+      <path d="M98 17h27m-6-5 6 5-6 5" fill="none" stroke="#607b9e" stroke-width="2"/>
+      <rect x="142" width="119" height="34" rx="8" fill="#1c3939"/><text x="161" y="22" fill="#82ead3">NATIVE RIG</text>
+      <path d="M277 17h27m-6-5 6 5-6 5" fill="none" stroke="#607b9e" stroke-width="2"/>
+      <rect x="322" width="118" height="34" rx="8" fill="#22314a"/><text x="340" y="22" fill="#d6e1f4">.BBMODEL</text>
+    </g>
+    <g transform="translate(700 39)">
+      <text x="31" y="30" fill="#7890ae" font-size="11" letter-spacing="2">WEIGHTED MESH / SCHEMATIC</text>
+      <path d="M145 305 235 305 246 237 157 222 284 169 230 119 345 89 313 37" fill="none" stroke="#31445e" stroke-width="1.5"/>
+      <path d="M145 305 235 305 246 237 284 169 345 89 313 37 230 119 157 222Z" fill="url(#ribbon)" stroke="#58d6bc" stroke-width="2"/>
+      <g stroke="#7ee1cc" stroke-width="1" opacity=".65" fill="none">
+        <path d="m145 305 101-68m-11 68-78-83m0 0 127-53m-38 68-16-118m0 0 115-30m-61 80 29-132"/>
+        <path d="m157 222 89 15m-16-118 54 50m29-132 32 52"/>
+      </g>
+      <path d="M190 305 201 230 257 144 329 65" fill="none" stroke="#f5b56b" stroke-width="5" stroke-linecap="round"/>
+      <g fill="#142237" stroke="#ffd49f" stroke-width="3">
+        <circle cx="190" cy="305" r="9"/><circle cx="201" cy="230" r="9"/><circle cx="257" cy="144" r="9"/><circle cx="329" cy="65" r="9"/>
+      </g>
+      <g fill="#a3f2e1"><circle cx="145" cy="305" r="4"/><circle cx="235" cy="305" r="4"/><circle cx="157" cy="222" r="4"/><circle cx="246" cy="237" r="4"/><circle cx="230" cy="119" r="4"/><circle cx="284" cy="169" r="4"/><circle cx="313" cy="37" r="4"/><circle cx="345" cy="89" r="4"/></g>
+      <path d="M349 65h59m-141 79h115m-171 86H92" stroke="#647996" stroke-width="1" stroke-dasharray="4 4"/>
+      <text x="415" y="70" fill="#f5b56b" font-size="12">bones</text>
+      <text x="390" y="149" fill="#9fe9d8" font-size="12">weights</text>
+      <text x="34" y="234" fill="#9fe9d8" font-size="12">mesh</text>
+      <rect x="40" y="344" width="445" height="43" rx="8" fill="#17243a" stroke="#2c3e59"/>
+      <text x="56" y="370" fill="#a4b2c9" font-size="11">KEYFRAMES</text>
+      <path d="M152 366h306" stroke="#405778"/>
+      <g fill="#f5b56b"><path d="m162 361 5 5-5 5-5-5z"/><path d="m230 361 5 5-5 5-5-5z"/><path d="m299 361 5 5-5 5-5-5z"/><path d="m368 361 5 5-5 5-5-5z"/><path d="m437 361 5 5-5 5-5-5z"/></g>
+      <path d="M299 350v31" stroke="#82ead3" stroke-width="2"/>
+    </g>
+    <path d="M56 454h1168" stroke="#2b3b52"/>
+    <text x="58" y="487" fill="#7890ae" font-size="12" letter-spacing="1">ONE PLUGIN FILE · NO ADDITIONAL RUNTIME DEPENDENCIES · MIT LICENSE</text>
+    <text x="1130" y="487" fill="#82ead3" font-size="12">v1.0.0</text>
+  </g>
+</svg>
